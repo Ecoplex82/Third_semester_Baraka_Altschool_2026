@@ -6,45 +6,60 @@
 [![Pandas](https://img.shields.io/badge/Pandas-2.0%2B-150458.svg)](https://pandas.pydata.org/)
 [![Seaborn](https://img.shields.io/badge/Seaborn-0.12%2B-3776AB.svg)](https://seaborn.pydata.org/)
 [![Status](https://img.shields.io/badge/Curriculum%20Progress-Weeks%201--4%20Completed-brightgreen.svg)]()
+[![Codebook](https://img.shields.io/badge/Data%20Dictionary-Verified-success.svg)](us_education_system_data_dictionary.md)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-> **Tracking Machine Learning Workflows, Business-Centric Visualizations, Statistical Modeling, Diagnostic Evaluations, and Portfolio Deliverables for AltSchool Africa (3rd Semester — 2026).**
+> **Applied Machine Learning Pipelines, Diagnostic Model Auditing, Business-Valued Visualizations, and Executive Strategy for AltSchool Africa (3rd Semester — 2026).**
 
 ---
 
 > [!IMPORTANT]
 > ### ⚠️ Mandatory Educational Disclaimer & Caveat
-> **The dataset and statistical analyses in this repository are compiled strictly for educational, pedagogical, and coursework purposes within the AltSchool Africa Data Science & Machine Learning track.**  
-> The underlying data is synthetic/simulated and **is NOT a reflection of the actual United States educational system**, the National Center for Education Statistics (NCES), or any specific academic institution. Any resemblance to real institutions, living persons, or actual federal records is purely coincidental.
+> **The dataset and analytical findings in this repository are engineered strictly for educational, pedagogical, and coursework purposes within the AltSchool Africa Data Science & Machine Learning program.**  
+> **Caveat**: The data utilized here is **NOT a reflection of the actual United States educational system**, the U.S. Department of Education, the National Center for Education Statistics (NCES), or any specific academic institution. All records, metrics, and relationships are simulated/synthetic, intended solely to train, evaluate, and demonstrate machine learning modeling, statistical analysis, and executive data translation workflows. Any resemblance to real institutions, living persons, or empirical government registries is purely coincidental.
 
 ---
 
-## 📌 Portfolio Overview
+## 📌 Executive Summary & Portfolio Overview
 
-This repository documents the applied machine learning engineering, exploratory analysis, and business translation coursework for the **3rd Semester of the AltSchool Africa Data Science / Machine Learning Program**.
+Welcome to the **AltSchool Africa 3rd Semester Machine Learning & Data Science Portfolio** repository. 
 
-The core objective is to move beyond "black-box" modeling and superficial charting to establish a rigorous, production-grade analytical pipeline. The portfolio demonstrates how exploratory visualization, diagnostic model auditing, and dimensional reduction directly inform high-stakes decision-making and executive resource allocation.
+Modern machine learning initiatives often fail in production because technical teams deliver opaque, uninterpretable "black-box" models. A model with 95% test accuracy offers zero strategic value if leadership cannot evaluate its decision boundaries, understand its cost-of-error matrix, or identify actionable business levers.
+
+This portfolio documents a progressive, end-to-end data science and machine learning curriculum. It bridges technical algorithm development (supervised classification, diagnostic confusion matrices, unsupervised PCA) with high-stakes executive translation (advising a state Department of Education on allocating a **$50 Million Intervention Fund**).
 
 ```mermaid
 flowchart TD
-    subgraph Data Layer
-        A["Raw Data Ingestion<br>(5,000 Institutions, 35 Features)"]
+    subgraph Layer1["1. Ingestion & Foundations (Week 1)"]
+        A["us_education_system_dataset.csv<br>(5,000 Institutions, 35 Features)"]
+        B["Exploratory Data Analysis<br>(Distributions, Skewness, Outliers)"]
+        A --> B
     end
 
-    subgraph Phase 1: Foundations
-        A --> B["Week 1: Exploratory Analysis<br>(Distributions, Skewness, Outliers)"]
-        B --> C["Week 2: Diagnostics & Unsupervised<br>(Correlation, Random Forest, PCA)"]
+    subgraph Layer2["2. Diagnostics & Unsupervised ML (Week 2)"]
+        C["Correlation Heatmaps<br>(Linear Association Matrix)"]
+        D["Supervised Random Forest<br>(Median Benchmark Classification)"]
+        E["Diagnostic Confusion Matrix<br>(Error Cost Auditing)"]
+        F["PCA Dimensionality Reduction<br>(Orthogonal Variance Projection)"]
+        B --> C
+        C --> D --> E
+        C --> F
     end
 
-    subgraph Phase 2: Business Value & Strategy
-        C --> D["Weeks 3 & 4: Executive Business Translation<br>($50M State Intervention Fund Case Study)"]
-        D --> E["Resource Allocation Audit<br>(Spending Skewness vs. Title I Tiers)"]
-        D --> F["ROI & Business Levers<br>(Economic Need vs. Academic Returns)"]
-        D --> G["Feature Redundancy Elimination<br>(Multi-Indicator Correlation Matrix)"]
+    subgraph Layer3["3. Executive Translation & Business Value (Weeks 3 & 4)"]
+        G["Executive Case Study:<br>$50M Intervention Fund Allocation"]
+        H["Resource Allocation Audit<br>(Spending Skewness vs. Title I Tiers)"]
+        I["Business Lever Discovery<br>(Economic Need vs. Academic ROI)"]
+        J["Feature Redundancy Elimination<br>(Collinearity & Multicollinearity Auditing)"]
+        E & F --> G
+        G --> H
+        G --> I
+        G --> J
     end
 
-    subgraph Phase 3: Actionable Insights
-        E & F & G --> H["Executive Recommendations<br>& Strategic Policy Guidance"]
+    subgraph Layer4["4. Strategic Decisions"]
+        K["Targeted Capital Deployment<br>& Policy Action Plans"]
+        H & I & J --> K
     end
 ```
 
@@ -52,69 +67,145 @@ flowchart TD
 
 ## 📅 Semester Curriculum & Activity Tracker
 
-| Week / Module | Focus Area & Key Topics | Status | Main Deliverables & Notebooks |
-| :--- | :--- | :---: | :--- |
-| **Week 1** | **ML Visualization & Exploratory Data Analysis (EDA)**<br>• Visualization Pipeline Setup (Matplotlib, Seaborn)<br>• Univariate & Multivariate Distribution Analysis<br>• Socioeconomic & Academic Feature Interaction | `COMPLETED` | [`third_Semester_Wk1.ipynb`](third_Semester_Wk1.ipynb)<br>[`us_education_system_dataset.csv`](us_education_system_dataset.csv) |
-| **Week 2** | **Feature Correlation, Model Diagnostics & Dimensionality Reduction**<br>• Multi-Feature Pearson Correlation Heatmaps<br>• Supervised Classification Baseline (Random Forest Classifier)<br>• Diagnostic Confusion Matrix Heatmap Evaluation<br>• Unsupervised PCA (2D Variance Projection) | `COMPLETED` | [`third_Semester_Week1_and_week_2.ipynb`](third_Semester_Week1_and_week_2.ipynb) |
-| **Weeks 3 & 4** | **Business Value of Data Visualization for Machine Learning**<br>• *"Why Business Leaders Don't Buy Black Boxes"*<br>• $50 Million Intervention Fund Allocation Case Study<br>• Resource Allocation Audit & Skewness Analysis<br>• Discovering Business Levers (Socioeconomic Need vs. Academic ROI)<br>• Feature Redundancy Elimination via Correlation Matrices | `COMPLETED` | [`wk3_and_wk4_semester_3_BUSINESS_VALUE_OF_DATA_VISUALIZATION_FOR_ML.ipynb`](wk3_and_wk4_semester_3_BUSINESS_VALUE_OF_DATA_VISUALIZATION_FOR_ML.ipynb) |
-| **Week 5** | **End-to-End ML Pipeline Packaging & Capstone Project**<br>• Production Pipeline Serialization & Model Serving Interface | `PLANNED` | *Upcoming* |
+This repository methodically tracks and archives all learning milestones, code implementations, and project deliverables throughout the 3rd Semester:
+
+| Week / Milestone | Core Focus Area & Technical Scope | Learning Outcomes & ML Concepts | Deliverables | Status |
+| :--- | :--- | :--- | :--- | :---: |
+| **Week 1** | **ML Visualization & Exploratory Data Analysis (EDA)** | • Visualization as a cognitive & computational tool<br>• Matplotlib & Seaborn pipeline configuration<br>• Univariate distribution & skewness analysis<br>• Bivariate & multivariate interaction mapping | [`third_Semester_Wk1.ipynb`](third_Semester_Wk1.ipynb)<br>[`us_education_system_dataset.csv`](us_education_system_dataset.csv) | `COMPLETED` |
+| **Week 2** | **Statistical Correlation, Model Diagnostics & Dimensionality Reduction** | • Multi-variable Pearson correlation heatmaps<br>• Supervised binary classification (Random Forest baseline)<br>• Diagnostic confusion matrix evaluation<br>• Unsupervised PCA (2D variance decomposition) | [`third_Semester_Week1_and_week_2.ipynb`](third_Semester_Week1_and_week_2.ipynb) | `COMPLETED` |
+| **Weeks 3 & 4** | **Business Value of Data Visualization for Machine Learning** | • Executive framing: *"Why Leaders Don't Buy Black Boxes"*<br>• $50 Million State Intervention Fund Case Study<br>• Institutional resource allocation & spending skewness audit<br>• Business levers: Economic need vs. educational ROI<br>• Eliminating feature redundancy via diverging correlation heatmaps | [`wk3_and_wk4_semester_3_BUSINESS_VALUE_OF_DATA_VISUALIZATION_FOR_ML.ipynb`](wk3_and_wk4_semester_3_BUSINESS_VALUE_OF_DATA_VISUALIZATION_FOR_ML.ipynb) | `COMPLETED` |
+| **Reference** | **Complete Codebook & Variable Dictionary** | • 35-feature technical documentation<br>• Structural missingness analysis (MNAR for secondary metrics)<br>• Compositional simplex constraints & collinearity mitigation | [`us_education_system_data_dictionary.md`](us_education_system_data_dictionary.md) | `COMPLETED` |
+| **Week 5** | **MLOps, Pipeline Packaging & Capstone Project** | • Model serialization, inference pipelines, and serving interface | *Upcoming Milestone* | `PLANNED` |
 
 ---
 
-## 🔬 In-Depth Activity Highlights
+## 🔬 In-Depth Activity Breakdown & Technical Methodology
 
 ### 📍 Week 1: Exploratory Data Analysis & Visualization Pipeline
-* **Univariate Distribution & Skewness**:
-  * Evaluated per-pupil expenditures (`per_pupil_expenditure_usd`) using Kernel Density Estimation (KDE) and histograms to identify skewness and funding variance across school counts.
-  * Assessed math proficiency splits across federal Title I designations (`title_i_status`) using box plots to evaluate baseline disparities.
+* **Philosophy**: Data visualization in machine learning is not about aesthetic ornamentation; it is an intuitive computational lens to inspect distributions, detect anomalies, verify data integrity, and diagnose feature relationships.
+* **Univariate Distribution & Skewness Analysis**:
+  * Evaluated per-pupil expenditures (`per_pupil_expenditure_usd`) using Kernel Density Estimation (KDE) and histograms, uncovering moderate right-skewness and budgetary clustering.
+  * Assessed academic performance distributions across federal Title I designations (`title_i_status`) using stratified box plots.
 * **Multivariate Socioeconomic Mapping**:
-  * Implemented multi-variable scatter plots mapping student socioeconomic needs (`percent_free_reduced_lunch`) against academic output (`math_proficiency_pct`), hue-encoded by institutional governance (`control`: Public, Charter, Private) and scaled by per-pupil spending.
+  * Constructed high-dimensional scatter plots mapping student socioeconomic disadvantage (`percent_free_reduced_lunch`) against academic output (`math_proficiency_pct`).
+  * Layered categorical institutional governance (`control`: Public, Charter, Private) via hue encoding, with circle radii scaled by per-pupil expenditure.
 
 ### 📍 Week 2: Statistical Correlation, Supervised Diagnostics & PCA
-* **Intercorrelation & Heatmap Analysis**:
-  * Formatted a continuous numeric subset across 9 key indicators:
+* **Intercorrelation & Multicollinearity Audit**:
+  * Extracted 9 continuous performance indicators:
     `per_pupil_expenditure_usd`, `student_teacher_ratio`, `percent_free_reduced_lunch`, `special_education_pct`, `english_learner_pct`, `math_proficiency_pct`, `reading_proficiency_pct`, `graduation_rate_pct`, `chronic_absenteeism_pct`.
-  * Computed Pearson correlation matrices and rendered publication-quality annotated heatmaps via Seaborn (`cmap='Blues'`) to inspect collinearity and identify primary drivers of academic performance.
+  * Generated Pearson correlation matrices and formatted annotated heatmaps (`cmap='Blues'`) to quantify linear dependencies and detect collinear feature pairs.
 * **Supervised Machine Learning Diagnostic**:
-  * Formulated a binary target $y \in \{0, 1\}$ classifying academic achievement tiers based on the median math proficiency benchmark ($y = 1$ if $\text{math\_proficiency\_pct} \ge \text{median}$, else $0$).
-  * Split feature matrix $X$ (with target dropped) and $y$ into training and hold-out test sets ($70\% / 30\%$, `random_state=42`).
-  * Trained a `RandomForestClassifier(n_estimators=100, random_state=42)`.
-  * Generated and visualized diagnostic confusion matrix heatmaps to assess true positives, false positives, sensitivity, and specificity across performance tiers.
-* **Unsupervised Learning & Dimensionality Reduction**:
-  * Standardized the multidimensional feature space using Scikit-Learn's `StandardScaler`.
-  * Fitted Principal Component Analysis (`PCA(n_components=2)`) to project the high-dimensional institutional attributes onto 2 orthogonal principal axes.
-  * Visualized 2D PCA embeddings with color-coded performance tiers, annotating explained variance ratios for both components.
+  * Formulated a binary classification benchmark $y \in \{0, 1\}$ targeting high-performing institutions based on the population median math proficiency:
+    $$y = \begin{cases} 1, & \text{if } \text{math\_proficiency\_pct} \ge \text{median}(\text{math\_proficiency\_pct}) \\ 0, & \text{otherwise} \end{cases}$$
+  * Partitioned feature matrix $X$ and label vector $y$ into training and hold-out evaluation sets ($70\% / 30\%$, `random_state=42`).
+  * Trained a baseline `RandomForestClassifier(n_estimators=100, random_state=42)`.
+  * Visualized and audited the diagnostic confusion matrix via heatmap to quantify Type I (False Positive) and Type II (False Negative) error rates.
+* **Unsupervised Dimensionality Reduction (PCA)**:
+  * Standardized feature dimensions to zero mean and unit variance using `StandardScaler`.
+  * Fitted Principal Component Analysis (`PCA(n_components=2)`) to capture maximal orthogonal variance across high-dimensional features.
+  * Visualized 2D PCA latent representations color-coded by academic achievement tiers.
 
 ### 📍 Weeks 3 & 4: Business Value of Data Visualization for Machine Learning
-* **Executive Framing — "Why Business Leaders Don't Buy Black Boxes"**:
-  * Addressed why high statistical accuracy alone (e.g., 95% accuracy) fails to impress executive stakeholders when models lack clarity, auditability, and actionable business levers.
-  * Positioned data visualization as the essential **translation layer** bridging technical algorithms and strategic policy.
-* **Real-World Case Study — $50 Million Intervention Fund Allocation**:
-  * Advised a state Department of Education tasked with strategically deploying a $50M capital fund to improve student math proficiency.
-* **Resource Allocation Audit**:
-  * Conducted an institutional expenditure distribution audit revealing financial spending skewness.
-  * Benchmarked academic performance across Title I funding tiers (`title_i_status`) to highlight systemic baselines.
-* **Discovering Business Levers & ROI**:
-  * Tackled the executive question: *"Does throwing money at schools solve performance gaps, or are socioeconomic factors stronger drivers?"*
-  * Developed multi-layered scatter visualizations mapping economic hardship (`percent_free_reduced_lunch`), math outcomes (`math_proficiency_pct`), school governance models (`control`), and per-pupil spending levels (`per_pupil_expenditure_usd`).
-* **Feature Redundancy Elimination**:
-  * Analyzed key indicators (`per_pupil_expenditure_usd`, `student_teacher_ratio`, `percent_free_reduced_lunch`, `special_education_pct`, `english_learner_pct`, `math_proficiency_pct`, `reading_proficiency_pct`, `graduation_rate_pct`, `broadband_access_pct`).
-  * Constructed correlation heatmaps using diverging color ramps (`coolwarm`) to identify non-redundant predictive variables for data-driven capital allocation.
+
+#### 💼 Executive Case Study: Advising on a $50 Million Intervention Fund
+The capstone module simulated a high-stakes consulting engagement: advising a state Department of Education on how to optimally allocate a **$50,000,000 capital intervention fund** to drive student math proficiency.
+
+```
+                    ┌──────────────────────────────────────────────┐
+                    │ $50M State Intervention Fund Allocation Need │
+                    └──────────────────────┬───────────────────────┘
+                                           │
+                  ┌────────────────────────┴────────────────────────┐
+                  ▼                                                 ▼
+     [Resource Allocation Audit]                       [Business Lever Discovery]
+  • How are funds distributed now?               • Does capital spending increase math ROI?
+  • High expenditure skewness detected           • Economic hardship (SES) is the #1 driver
+  • Title I schools receive baseline funding     • Spending yields diminishing returns if
+    yet face systemic outcome disparities          socioeconomic headwinds are unaddressed
+                  │                                                 │
+                  └────────────────────────┬────────────────────────┘
+                                           │
+                                           ▼
+                         [Feature Redundancy Elimination]
+                      • Drop collinear indicators (r > 0.80)
+                      • Target non-redundant predictive levers
+                                           │
+                                           ▼
+                         [Data-Driven Capital Policy]
+                      • Deploy funds toward community support,
+                        targeted tutoring, and nutrition programs
+```
+
+* **Core Executive Takeaways**:
+  1. **Phase 1 — Risk & Data Quality**: Unaudited, heavily skewed datasets produce unstable machine learning models. Visualizing financial distributions highlighted extreme spending outliers that would distort unregularized models.
+  2. **Phase 2 — ROI & Lever Discovery**: Analyzing per-pupil spending versus math proficiency demonstrated that simply "throwing money at schools" without addressing underlying socioeconomic hardship (`percent_free_reduced_lunch`) yields diminishing returns. Interventions must prioritize high-poverty Title I cohorts.
+  3. **Phase 3 — Model Auditing & Trust**: High statistical metrics must translate into tangible business decisions. Confusion matrices and error visualizations make the operational consequences of misclassifying at-risk institutions transparent to policymakers.
+  4. **Phase 4 — Feature Redundancy Elimination**: Evaluated correlation coefficients across all primary indicators using diverging `coolwarm` heatmaps to eliminate redundant features, preventing model overfitting and ensuring parsimonious, interpretable models.
 
 ---
 
 ## 📖 Feature Taxonomy & Dataset Architecture
 
-The underlying dataset contains **5,000 observations across 35 features** organized into 8 functional domains:
+The dataset ([`us_education_system_dataset.csv`](us_education_system_dataset.csv)) contains **5,000 institutional records across 35 features**, partitioned into 8 functional modules:
 
-1. **Institutional Identity & Geography**: `institution_id` (Primary Key), `institution_name`, `state_code`, `state_name`, `county`, `nces_locale` (8 locale categories).
-2. **Governance & Classification**: `level` (Elementary, Middle, High, University, College), `control` (Public, Charter, Private), `title_i_status`.
-3. **Staffing & Capacity**: `total_enrollment` (Min: 80, Max: 45,252), `number_of_teachers`, `student_teacher_ratio` (Mean: 14.93).
-4. **Demographics & Socioeconomics**: `percent_free_reduced_lunch`, racial composition percentages (`racial_white_pct`, `racial_black_pct`, etc.), `special_education_pct`, `english_learner_pct`.
-5. **Funding Architecture**: `per_pupil_expenditure_usd`, `federal_funding_pct`, `state_funding_pct`, `local_funding_pct` (Compositional Simplex: $\sum \text{funding} \equiv 100\%$).
-6. **Academic Performance**: `math_proficiency_pct`, `reading_proficiency_pct`, `graduation_rate_pct`, `chronic_absenteeism_pct`.
-7. **College Readiness (Structural MNAR)**: `avg_sat_score`, `avg_act_score`, `ap_ib_participation_pct`, `postsecondary_enrollment_pct` (populated only for secondary and higher institutions).
-8. **Infrastructure & Accreditations**: `stem_certified_flag` (`Yes`/`No`), `broadband_access_pct` (Mean: 90.79%).
+```mermaid
+mindmap
+  root((US Education Dataset))
+    Institutional Identity & Geography
+      institution_id
+      institution_name
+      state_code
+      state_name
+      county
+      nces_locale
+    Governance & Structure
+      level
+      control
+      title_i_status
+    Staffing & Capacity
+      total_enrollment
+      number_of_teachers
+      student_teacher_ratio
+    Financial Architecture
+      per_pupil_expenditure_usd
+      federal_funding_pct
+      state_funding_pct
+      local_funding_pct
+    Student Demographics & SES
+      percent_free_reduced_lunch
+      racial_white_pct
+      racial_black_pct
+      racial_hispanic_pct
+      racial_asian_pct
+      racial_native_pct
+      racial_two_or_more_pct
+      special_education_pct
+      english_learner_pct
+    Academic Outcomes
+      math_proficiency_pct
+      reading_proficiency_pct
+      graduation_rate_pct
+      chronic_absenteeism_pct
+    College Readiness MNAR
+      avg_sat_score
+      avg_act_score
+      ap_ib_participation_pct
+      postsecondary_enrollment_pct
+    Infrastructure & Tech
+      stem_certified_flag
+      broadband_access_pct
+```
+
+### Key Statistical Constraints & Modeling Guidance
+* **Compositional Simplex Constraints**:
+  $$\sum \text{funding\_pct} = 100\% \quad \text{and} \quad \sum \text{racial\_pct} = 100\%$$
+  * *ML Guidance*: Perfect multicollinearity occurs if all proportions are included simultaneously. One column must be omitted when fitting linear models or distance-based estimators.
+* **Structural Missingness (Missing Not At Random — MNAR)**:
+  * Features such as `avg_sat_score`, `avg_act_score`, `ap_ib_participation_pct`, and `postsecondary_enrollment_pct` are missing in $\sim 67\% - 71\%$ of records because elementary and middle schools do not administer college-readiness programs.
+  * *ML Guidance*: Avoid indiscriminate mean/median imputation. Train stratified secondary-school submodels or create explicit missingness indicators.
+
+> 📚 For comprehensive variable specifications, statistical ranges, cardinality, and feature engineering notes, refer to the full [`us_education_system_data_dictionary.md`](us_education_system_data_dictionary.md).
 
 ---
 
@@ -122,26 +213,30 @@ The underlying dataset contains **5,000 observations across 35 features** organi
 
 ```
 Third_semester_Baraka_Altschool_2026/
-├── README.md                                                                # Professional portfolio overview & curriculum tracker
-├── third_Semester_Wk1.ipynb                                                 # Week 1 EDA & Visualization Pipeline Notebook
-├── third_Semester_Week1_and_week_2.ipynb                                    # Week 1 & 2 Notebook (Correlation, RF Model, Confusion Matrix, PCA)
-├── wk3_and_wk4_semester_3_BUSINESS_VALUE_OF_DATA_VISUALIZATION_FOR_ML.ipynb # Weeks 3 & 4 Business Value & $50M Allocation Case Study
-└── us_education_system_dataset.csv                                          # Educational dataset (5,000 records, 35 features)
+├── README.md                                                                 # Professional portfolio documentation & curriculum tracker
+├── us_education_system_data_dictionary.md                                    # Comprehensive 35-feature codebook & statistical dictionary
+├── us_education_system_dataset.csv                                           # Educational dataset (5,000 records, 35 features)
+├── third_Semester_Wk1.ipynb                                                  # Week 1: Exploratory Data Analysis & Visualization Pipeline
+├── third_Semester_Week1_and_week_2.ipynb                                     # Weeks 1 & 2: Correlation, Random Forest Baseline & PCA
+└── wk3_and_wk4_semester_3_BUSINESS_VALUE_OF_DATA_VISUALIZATION_FOR_ML.ipynb  # Weeks 3 & 4: Business Value & $50M Allocation Case Study
 ```
 
 ---
 
-## 🛠️ Tech Stack & Requirements
+## 🛠️ Technology Stack & Dependencies
 
-* **Programming Language**: Python 3.8+
-* **Development Environments**: Jupyter Notebook, VS Code, Google Colab
-* **Data Processing**: `pandas`, `numpy`
-* **Data Visualization**: `matplotlib`, `seaborn`
-* **Machine Learning**: `scikit-learn` (`RandomForestClassifier`, `StandardScaler`, `PCA`, `confusion_matrix`, `train_test_split`)
+| Category | Tools & Libraries |
+| :--- | :--- |
+| **Core Language** | Python 3.8+ |
+| **Interactive Environments** | Jupyter Notebook, Visual Studio Code, Google Colab |
+| **Data Ingestion & Manipulation** | `pandas`, `numpy` |
+| **Data Visualization & Analytics** | `matplotlib`, `seaborn` |
+| **Machine Learning & Modeling** | `scikit-learn` (`RandomForestClassifier`, `StandardScaler`, `PCA`, `confusion_matrix`, `train_test_split`) |
+| **Version Control & Collaboration** | Git, GitHub |
 
 ---
 
-## 🚀 Getting Started & Execution
+## 🚀 Getting Started & Replication
 
 ### 1. Clone the Repository
 ```bash
@@ -151,28 +246,48 @@ cd Third_semester_Baraka_Altschool_2026
 
 ### 2. Set Up Virtual Environment & Dependencies
 ```bash
+# Create virtual environment
 python -m venv venv
+
+# Activate environment
 # On Windows:
 venv\Scripts\activate
 # On macOS/Linux:
 source venv/bin/activate
 
+# Install required packages
 pip install pandas numpy matplotlib seaborn scikit-learn jupyter
 ```
 
-### 3. Launch Notebooks
-```bash
-# To run Weeks 3 & 4 Business Value Case Study:
-jupyter notebook wk3_and_wk4_semester_3_BUSINESS_VALUE_OF_DATA_VISUALIZATION_FOR_ML.ipynb
+### 3. Verify Data & Environment Integrity
+Run this quick verification check to ensure data and dependency integrity:
+```python
+import pandas as pd
+import numpy as np
 
-# To run Weeks 1 & 2 Diagnostics Pipeline:
-jupyter notebook third_Semester_Week1_and_week_2.ipynb
+# Load dataset
+df = pd.read_csv('us_education_system_dataset.csv')
+print(f"Dataset successfully loaded with shape: {df.shape}")
+assert df.shape == (5000, 35), "Data shape validation failed!"
+print("Integrity check passed.")
+```
+
+### 4. Run Notebooks
+```bash
+# Launch Jupyter Notebook server
+jupyter notebook
+
+# Recommended execution order:
+# 1. third_Semester_Wk1.ipynb
+# 2. third_Semester_Week1_and_week_2.ipynb
+# 3. wk3_and_wk4_semester_3_BUSINESS_VALUE_OF_DATA_VISUALIZATION_FOR_ML.ipynb
 ```
 
 ---
 
-## 👤 Author & Acknowledgments
+## 👤 Author & Academic Details
 
 * **Author**: Emmanuel Bright Chetachi ([@Ecoplex82](https://github.com/Ecoplex82))
 * **Program**: AltSchool Africa — Data Science & Machine Learning (3rd Semester)
 * **Cohort Year**: 2026
+* **Repository**: [`Third_semester_Baraka_Altschool_2026`](https://github.com/Ecoplex82/Third_semester_Baraka_Altschool_2026)
